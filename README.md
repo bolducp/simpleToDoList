@@ -1,3 +1,3 @@
 # simpleToDoList
 
-a simple to-do list app make with jQuery and Bootstrap
+a simple to-do list app made with jQuery and Bootstrap
