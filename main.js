@@ -19,8 +19,7 @@ function addTaskToList(){
   }
   var task = $("<div>").addClass('col-xs-6').text(taskText);
   var due = $("<div>").addClass('col-xs-2').text(dueDate);
-  var completed = $("<div>").addClass('col-xs-2').append($('<input />',
-    { type: 'checkbox'}).addClass('col-xs-2'));
+  var completed = $("<div>").addClass('col-xs-2').append($('<input />',{ type: 'checkbox'}).addClass('col-xs-2'));
   var trash = $("<div>").addClass('col-xs-2').append($('<span>').addClass("col-xs-2 glyphicon glyphicon-trash"));
 
   var newTask = $("<div>").addClass("row").append(task, due, completed, trash);
