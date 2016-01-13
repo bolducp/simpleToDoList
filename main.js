@@ -17,6 +17,10 @@ function addTaskToList(){
   if (dueDate ==="Invalid date"){
     dueDate = " ";
   }
+
+  //var moment("20120620", "YYYYMMDD");
+
+
   var task = $("<div>").addClass('col-xs-6').text(taskText);
   var due = $("<div>").addClass('col-xs-2').text(dueDate);
   var completed = $("<div>").addClass('col-xs-2').append($('<input />',{ type: 'checkbox'}).addClass('col-xs-2'));
@@ -28,6 +32,7 @@ function addTaskToList(){
 }
 
 function deleteTask(){
-  var $taskNum = ($(this).closest('.row'));
-  $taskNum.remove();
+  var $taskRow = ($(this).closest('.row'));
+  $taskRow.addClass("animated fadeOutDown");
+  setTimeout(function(){$taskRow.remove();}, 700);
 }
